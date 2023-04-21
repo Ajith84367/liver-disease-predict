@@ -58,3 +58,11 @@ def pred():
     print(t)
     if t > 0.5:
         prediction_text = 'You have a Liver disease, Please consult a Doctor'
+        else:
+            prediction_text='Congratualation you dont have liver disease
+            print(prediction_text)
+            return render_template('submit.html', prediction_results=prediction_text)
+        
+ if __name__ =="__main__":
+    app.run()
+
