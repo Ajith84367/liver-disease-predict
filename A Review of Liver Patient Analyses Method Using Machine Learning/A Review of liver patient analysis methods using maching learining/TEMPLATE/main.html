@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body bgcolor="yellow">
+<body>
     <header>
         <nav>
           <ul>
@@ -30,7 +30,7 @@ Liver Disease Prediction
 <h2> Enter the details to check whether Liver disease affect or not!</h2>
 <h4> 
 
-<form action="{{url_for('predict')}}" method="post">
+<form action="/getdata" method="post">
 <div >
 	<p> Age : <input type='text' name='age' placeholder='Enter your Age' Enter Numerical part required='required' />
     <p> Gender : <input type='text' name='Gender' placeholder='Enter Gender' Enter 0 for Male 1 for Female required='required' />
@@ -45,8 +45,9 @@ Liver Disease Prediction
     <p> Albumin_and_Globulin_Ratio : <input type='text' name='Albumin_and_Globulin_Ratio ' placeholder='Albumin_and_Globulin_Ratio ' required='required' /></p>
     
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-
-</div>     <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+	
+	<a href=submit.html> <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></a>
+	</div>
 </form>
 </h4>
 <h2>
